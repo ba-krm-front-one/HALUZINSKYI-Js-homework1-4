@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 1-4</title>
+</head>
+<body>
+    <script>
+        var password;
+        admin = prompt('vvedite login "Admin"');
+        if(admin === null) {
+            alert('Logout');
+        } else {
+            if(admin == 'Admin') {
+                password = prompt('Enter Password "BlackLord"');
+                if(password === null) {
+                    alert('Logout');
+                } else {
+                    if(password == 'BlackLord') {
+                        alert('Welcome');
+                    } else {
+                        alert('Do not know you');
+                    }
+                }
+            } else {
+                alert('I do not know you');
+            }
+        }
+    </script>
+
+    <script>
+        var n = prompt('Enter the maximum number');
+        n = Number(n);
+        for (var i=2; i<=n; i++){
+            for(var j=2; j<=i; j++){
+                if (i%j == 0) break;
+            }
+            if(j==i)
+                console.log(i);
+        }
+    </script>
+
+
+</body>
+</html>
